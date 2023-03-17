@@ -13,7 +13,7 @@
     --app-orange: #ff833c;
     --app-red: #ff3c57;
     --app-red-hover: #ff2846;
-    --app-orange-text: #ff8e1c;
+    --app-orange-text: #ff6500;
     --app-light-gray: #f9f9f9;
     --app-white: #fff;
 }
@@ -21,5 +21,95 @@
 
 body {
     background-color: var(--app-dark-bg);
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    padding-top: 50px;
 } 
 
+h1 {
+    text-align: center;
+    color:var(--app-white);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#contact-info {
+    height: 44px;
+    width: 400px;
+    color: var(--app-white);
+    background-color:#3e4653;
+    border-radius: 5px;
+    margin: 0 20px;
+    padding: 10px 15px;
+    font-size: 17px;
+}
+
+#add-btn {
+    width: 125px;
+    height: 45px;
+    border-radius: 50px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 26px 30px -10px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    background-color:var(--app-orange);
+}
+
+#add-btn:hover {
+    background-color:var(--app-orange-text);
+}
+
+#validation-txt {
+    color:var(--app-white);
+    text-align: center;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* CSS grid for the contact list */
+#contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 15px auto;
+    height: 400px;
+    width: 700px;
+    color: #fff;
+    padding: 10px;
+    background-color:#3e4653;
+    
+}
+
+/* Style for each contact item */
+#contacts-grid > div {
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#contacts-grid > div:hover {
+    background-color: lightgray;
+}
+
+#count {
+    width: 185px;
+    height: 45px;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 26px 30px -10px;
+    transition: all 0.25s ease-in-out;
+    background-color:var(--app-purple);
+    text-align: center;
+    margin: 45px auto;
+    padding: 10px 10px;
+}
