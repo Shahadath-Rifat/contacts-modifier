@@ -1,10 +1,5 @@
-@import url(./reset.css);
+@import url("./reset.css");
 
-
-.container {
-    width: min(100% - 30px, 1080px);
-    margin-inline: auto;
-}
 
 :root {
     --app-dark-bg: #1a1d28;
@@ -18,17 +13,21 @@
     --app-white: #fff;
 }
 
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
 
 body {
-    background-color: var(--app-dark-bg);
-    font-family: Arial, sans-serif;
-    padding: 15px;
-    padding-top: 50px;
-} 
+  background-color:var(--app-dark-bg);
+  font-family: Arial, sans-serif;
+  padding: 15px;
+  padding-top: 50px;
+}
 
 h1 {
-    text-align: center;
-    color:var(--app-white);
+  text-align: center;
+  color: var(--app-white);
 }
 
 form {
@@ -48,7 +47,7 @@ form {
     font-size: 17px;
 }
 
-#add-btn {
+button {
     width: 125px;
     height: 45px;
     border-radius: 50px;
@@ -61,42 +60,9 @@ form {
     background-color:var(--app-orange);
 }
 
-#add-btn:hover {
+
+button:hover {
     background-color:var(--app-orange-text);
-}
-
-#validation-txt {
-    color:var(--app-white);
-    text-align: center;
-    height: 30px;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-/* CSS grid for the contact list */
-#contacts-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin: 15px auto;
-    height: 400px;
-    width: 700px;
-    color: #fff;
-    padding: 10px;
-    background-color:#3e4653;
-    
-}
-
-/* Style for each contact item */
-#contacts-grid > div {
-    border: 1px solid black;
-    padding: 10px;
-    cursor: pointer;
-}
-
-#contacts-grid > div:hover {
-    background-color: lightgray;
 }
 
 #count {
@@ -112,4 +78,43 @@ form {
     text-align: center;
     margin: 45px auto;
     padding: 10px 10px;
+    letter-spacing: 0.2;
+}
+
+#input {
+    color:var(--app-white);
+    text-align: center;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.contact-list {
+  display: grid;
+  height: 400px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  grid-gap: 10px;
+  color: #757575;
+  background-color: #171A23;
+  padding: 20px;
+  border-radius: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 120px;
+  cursor: pointer;
+}
+
+.contact-list > div {
+    cursor: pointer;
+}
+
+p {
+  font-size: 16px;
+  width: 300px;
+  height: 30px;
+  box-sizing: border-box;
+  background-color: #272931; 
+  padding: 5px 10px 5px 10px;
 }
